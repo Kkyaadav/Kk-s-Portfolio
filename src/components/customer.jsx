@@ -55,7 +55,7 @@ function Customer(){
          <span className='text-primary'>Customer</span> feed</h2>
          <img className='h-9 mt-4 scale-x-[-1]' src="/image.png" alt="" />
         </div>
-        <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col gap-4 overflow-hidden">
             <div id='line1' className="flex gap-4 overflow-hidden w-screen  -translate-x-24 transition-transform ease-linear">
                 <Cc name='kailash' img='/kke.png'/>
                 <Cc name='kk' img='/kke.png'/>
