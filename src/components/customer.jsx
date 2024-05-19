@@ -17,7 +17,7 @@ function  setupIntersectionObserver(element, isLTR, speed) {
     const intersectionObserver = new IntersectionObserver(intersectionCallback);
 
     
-    intersectionObserver.observe(element);
+    //intersectionObserver.observe(element);
 
     function scrollHandler() {
         const translateX = (window.innerHeight - element.getBoundingClientRect().top) * speed;
