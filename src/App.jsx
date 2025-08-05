@@ -1,19 +1,22 @@
-import { useState } from 'react'
-import Header from './components/header'
-import Footer from './components/footer'
-import Main from './components/Home'
-import Services from './components/services'
-import Customer from './components/customer'
-import { ReactDOM } from 'react'
-import { createBrowserRouter } from 'react-router-dom'
-
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skill from "./components/SkillsAndExpertise";
+import Achievements from "./components/Achievements";
+import Footer from "./components/Footer";
 function App() {
-
-   
   return (
-   <>
-   </>
-  )
+    <div className="bg-[#0F0F0F] text-white font-sans">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skill/>
+      <Achievements />
+      <Footer/>
+
+     
+    </div>
+  );
 }
 
-export default App
+export default App;

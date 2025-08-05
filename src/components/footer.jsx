@@ -1,32 +1,47 @@
-import {FaInstagram, FaGithub, FaTwitter} from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-function Footer(){
-    return(
-        <footer className=" flex flex-col justify-center border-t border-b bg-white p-2 dark:bg-black dark:border-gray-500">
-            <div className="flex flex-col md:flex-row justify-evenly items-center p-4">
-           <div >
-           <img className=' mb-4 h-10  scale-150' src='/logo2.png' alt="Error" />
-            </div>
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-            <div className="flex flex-col items-center md:flex-row gap-5 text-gray-500 ">
-                <Link to="#" className='hover:text-violet-600'>Company</Link>
-                <Link className='hover:text-violet-600' to="/About">About Us</Link>
-                <Link className='hover:text-violet-600' >Blogs</Link>
-                <Link className='hover:text-violet-600' >Teams</Link>
-            </div>
+const Footer = () => {
+  return (
+    <footer id="contact" className="bg-black border-t border-white/10 text-gray-300 py-10 ">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* Brand/Name */}
+        <h1 className="text-lg  text-white tracking-wider">
+          © {new Date().getFullYear()} Kailash Kumar
+        </h1>
 
-            <div className="flex gap-5 text-lg py-2  ">
-                <Link className='hover:shadow-green-200 hover:bg-primary hover:text-white border rounded-full p-1' href="#"> <FaTwitter/> </Link>
-                <Link to="github.com/Kkyaadav" className='hover:shadow-green-200 hover:bg-primary hover:text-white border rounded-full p-1'> <FaGithub/> </Link>
-                <Link className='hover:shadow-green-200 hover:bg-primary hover:text-white border rounded-full p-1 ' href=""> <FaInstagram/> </Link>
-            </div>
-            </div>
-            <div className="text-center">
-            <p>&#169; {new Date().getFullYear()} made with &#x1F496; in INDIA</p>
-            </div>
-           
-        </footer>
-    );
-}
+       <a href="mailto:kkyaadav786@gmail.com" className="border border-gray-400 p-5 rounded-lg flex gap-2 hover:bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 text-white "><Mail/>Get In Touch</a>
 
-export default Footer
+        {/* Social Icons */}
+        <div className="flex space-x-4 text-xl">
+          <a
+            href="https://github.com/Kkyaadav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://linkedin.com/in/kailash-kumar-p1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://twitter.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition"
+          >
+            <FaTwitter />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

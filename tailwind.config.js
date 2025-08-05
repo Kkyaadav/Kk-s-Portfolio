@@ -8,7 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'poppins':'Poppins'
+        'poppins':'Poppins',
+        'montserrat':'Montserrat Alternates',
+        'saccra':'Sacramento',
+        'roboto':'Roboto',
+        'ubuntu':'Ubuntu'
       },
       colors:{
         'primary':'#3F51B5',
