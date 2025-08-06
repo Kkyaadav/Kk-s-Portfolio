@@ -11,6 +11,7 @@ function About() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
+        
       >
        <span className="text-sm uppercase text-purple-400 tracking-wider bg-white/5 px-4 py-4 rounded-full border border-white/10 mb-4 inline-flex items-center gap-2">
   <span className="relative flex h-2 w-2">

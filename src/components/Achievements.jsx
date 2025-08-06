@@ -1,5 +1,5 @@
 import { FaTrophy, FaCodeBranch, FaBullseye, FaGraduationCap, FaUserTie, FaUsers, FaRocket, FaMedal, FaStar } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 const achievements = [
     {
         title: "Met Satya Nadella",
@@ -49,22 +49,43 @@ const stats = [
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-16 px-4 md:px-12 lg:px-24 bg-black text-white text-center">
-      {/* Tag */}
-      <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-1 rounded-full text-sm uppercase tracking-wide text-yellow-300 mb-4">
-        <div className="h-2 w-2 rounded-full bg-yellow-400 animate-ping" />
+    <section id="achievements" className="py-16 max-w-7xl px-4 mx-auto md:px-12 lg:px-24 bg-black text-white text-center">
+      {/* Tag */}      
+      <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+         
+        >
+      <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-4 rounded-full text-sm uppercase tracking-wide text-yellow-300 mb-4">
+        <div className="h-2 w-2  rounded-full bg-yellow-400 animate-ping" />
         Achievements & Recognition
       </div>
-
+      </motion.div>
       {/* Title */}
+      <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+         
+        >
       <h2 className="text-4xl md:text-5xl font-bold mb-4">
         Notable <span className="text-orange-500">Achievements</span>
       </h2>
       <p className="text-gray-400 max-w-2xl mx-auto mb-12">
         Recognition and milestones that showcase my journey in technology and leadership
       </p>
-
+      </motion.div>
       {/* Achievement Cards */}
+      <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          
+        >
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
         {achievements.map((item, idx) => (
           <div key={idx} className="bg-white/5 border border-white/10 rounded-xl p-6 text-left hover:scale-[1.02] transition-all duration-300">
@@ -76,7 +97,16 @@ export default function Achievements() {
         ))}
       </div>
 
+      </motion.div>
+
       {/* Stats */}
+      <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          
+        >
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {stats.map((stat, idx) => (
           <div key={idx} className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col items-center">
@@ -86,6 +116,7 @@ export default function Achievements() {
           </div>
         ))}
       </div>
+      </motion.div>
     </section>
   );
 }

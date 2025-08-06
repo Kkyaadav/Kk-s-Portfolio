@@ -49,7 +49,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-4 left-4 right-4 z-50 border border-gray-800 rounded-2xl ${
+      className={`fixed top-4 left-4 right-4 z-50 border max-w-screen-xl mx-auto border-gray-800 rounded-2xl ${
         scrolled
           ? "bg-[#0f0f0f]/80 backdrop-blur-lg shadow-md"
           : "bg-transparent"

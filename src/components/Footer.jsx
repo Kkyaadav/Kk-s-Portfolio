@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-black border-t border-white/10 text-gray-300 py-10 ">
+    <footer id="contact" className="bg-black border-t border-white/10 max-w-screen-xl mx-auto text-gray-300 py-10 ">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Brand/Name */}
         <h1 className="text-lg  text-white tracking-wider">

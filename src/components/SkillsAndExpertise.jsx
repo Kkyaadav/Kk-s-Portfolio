@@ -28,10 +28,18 @@ import {
   SiGithubactions,
   SiSpringboot,
 } from 'react-icons/si';
+import { motion } from "framer-motion";
 
 export default function SkillsAndExpertise() {
   return (
     <section id="skills" className="py-16 px-6 max-w-7xl mx-auto text-white bg-black">
+       <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-16"
+      >
       <div className="text-center mb-12">
         <span className="text-sm uppercase text-purple-400 tracking-wider bg-white/5 px-4 py-4 rounded-full border border-white/10 inline-flex items-center gap-2">
           <span className="relative flex h-2 w-2">
@@ -47,6 +55,14 @@ export default function SkillsAndExpertise() {
           A comprehensive showcase of my technical expertise across modern development technologies and frameworks.
         </p>
       </div>
+      </motion.div>
+      <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+
+        >
 
       <div className="grid md:grid-cols-2 gap-8">
         <Card title="Languages & Core" color="from-yellow-400 to-pink-500" items={[
@@ -81,6 +97,7 @@ export default function SkillsAndExpertise() {
           { icon: <FaAws />, label: 'AWS' },
         ]} />
       </div>
+      </motion.div>
     </section>
   );
 }
