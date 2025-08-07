@@ -57,7 +57,7 @@ function Hero() {
         {/* Social Links */}
         <motion.div
           variants={fadeUp}
-          className="mt-14 flex justify-center gap-3 flex-wrap"
+          className="mt-14 flex justify-center gap-3 flex-wrap z-30"
         >
           <a
             href="mailto:kkyaadav786@gmail.com"
