@@ -46,7 +46,7 @@ function Hero() {
 
         {/* Intro Text */}
         <motion.div variants={fadeUp} className="px-4 sm:px-10 md:px-40">
-          <p className="text-white/70 text-center !text-xl sm:text-base md:text-lg">
+          <p className="text-white/70 text-center !text-xl sm:text-base md:text-lg text-justify">
             Full-stack developer with experience building production grade applications
             used by <span className="text-purple-400 font-semibold">1000+</span> users.
             Skilled in creating scalable systems, intuitive user interfaces, and integrating
