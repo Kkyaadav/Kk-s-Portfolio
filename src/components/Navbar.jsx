@@ -55,11 +55,11 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="flex justify-between items-center px-5 py-5">
+      <div className="flex justify-between items-center px-5 py-4">
         <h1 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-gradient-x">
           <a
             href="#"
-            className="inline-block text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 transform transition-transform duration-300 ease-in-out hover:scale-150"
+            className="tinline-block text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 transform transition-transform duration-300 ease-in-out hover:scale-150"
           >
             KK
           </a>
