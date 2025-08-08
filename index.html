@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png"  />
     <link rel="stylesheet" href="./src/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,13 +89,13 @@ function animateParticle(particle) {
   }, delay * 1000);
 }
 
-// 🖱 Mouse Interaction
+// Mouse Interaction
 document.addEventListener('mousemove', (e) => {
   spawnMouseParticle(e.clientX, e.clientY);
   moveSpheres(e.clientX, e.clientY);
 });
 
-// 📱 Touch Interaction
+//  Touch Interaction
 document.addEventListener('touchmove', (e) => {
   const touch = e.touches[0];
   spawnMouseParticle(touch.clientX, touch.clientY);
@@ -110,7 +110,7 @@ document.addEventListener('touchstart', (e) => {
   moveSpheres(touch.clientX, touch.clientY);
 });
 
-// 💥 Particle creation at pointer
+//  Particle creation at pointer
 function spawnMouseParticle(clientX, clientY) {
   const mouseX = (clientX / window.innerWidth) * 100;
   const mouseY = (clientY / window.innerHeight) * 100;
