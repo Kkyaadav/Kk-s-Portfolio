@@ -74,7 +74,7 @@ const Navbar = () => {
                 onClick={() => setActiveLink(href)}
                 className={`px-3 py-2 rounded-lg transition ${
                   activeLink === href
-                    ? "bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 text-white"
+                    ? "bg-gradient-to-r from-red-500/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-3xl  rounded-xl p-6 shadow-lg"
                     : "text-gray-400 hover:text-white"
                 }`}
               >

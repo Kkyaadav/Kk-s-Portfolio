@@ -114,13 +114,13 @@ function About() {
         >
        <h2 className="font-extrabold text-2xl">Technologies I Work With</h2>
        <div className="flex gap-2 justify-center flex-wrap">
-        <div className="border border-gray-400 rounded-full p-2">Java</div>
-        <div className="border border-gray-400 rounded-full p-2">JavaScript</div>
-        <div className="border border-gray-400 rounded-full p-2">Python</div>
-        <div className="border border-gray-400 rounded-full p-2">React</div>
-        <div className="border border-gray-400 rounded-full p-2">Node.js</div>
-        <div className="border border-gray-400 rounded-full p-2">SQl</div>
-        <div className="border border-gray-400 rounded-full p-2">SpringBoot</div>
+        <div className="border border-gray-400 rounded-full p-2 hover:bg-gradient-to-r from-red-400/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-md  shadow-lg cursor-pointer">Java</div>
+        <div className="border border-gray-400 rounded-full p-2 hover:bg-gradient-to-r from-red-400/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-md  shadow-lg cursor-pointer">JavaScript</div>
+        <div className="border border-gray-400 rounded-full p-2 hover:bg-gradient-to-r from-red-400/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-md  shadow-lg cursor-pointer">Python</div>
+        <div className="border border-gray-400 rounded-full p-2 hover:bg-gradient-to-r from-red-400/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-md  shadow-lg cursor-pointer">React</div>
+        <div className="border border-gray-400 rounded-full p-2 hover:bg-gradient-to-r from-red-400/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-md  shadow-lg cursor-pointer">Node.js</div>
+        <div className="border border-gray-400 rounded-full p-2 hover:bg-gradient-to-r from-red-400/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-md  shadow-lg cursor-pointer">SQl</div>
+        <div className="border border-gray-400 rounded-full p-2 hover:bg-gradient-to-r from-red-400/60 via-purple-400/60 to-blue-400/60 text-white backdrop-blur-md  shadow-lg cursor-pointer">SpringBoot</div>
        </div>
         </motion.div>
     </section>

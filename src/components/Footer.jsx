@@ -10,7 +10,10 @@ const Footer = () => {
           © {new Date().getFullYear()} Kailash Kumar
         </h1>
 
-       <a href="mailto:kkyaadav786@gmail.com" className="border border-gray-400 p-5 rounded-lg flex gap-2 hover:bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 text-white "><Mail/>Get In Touch</a>
+       <a href="mailto:kkyaadav786@gmail.com" className="border border-gray-400 p-5 rounded-full flex gap-2 
+bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 bg-[length:200%_200%] bg-left 
+transition-all duration-700 ease-in-out hover:bg-right text-white"
+><Mail/>Get In Touch</a>
 
         {/* Social Icons */}
         <div className="flex space-x-4 text-xl">

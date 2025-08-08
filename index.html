@@ -37,7 +37,7 @@
 
   <script>
     const particlesContainer = document.getElementById('particles-container');
-const particleCount = 100;
+const particleCount = 80;
 
 // Initial floating particles
 for (let i = 0; i < particleCount; i++) {
@@ -102,6 +102,7 @@ document.addEventListener('touchmove', (e) => {
   moveSpheres(touch.clientX, touch.clientY);
 });
 
+
 // Also trigger on tap
 document.addEventListener('touchstart', (e) => {
   const touch = e.touches[0];
@@ -138,16 +139,6 @@ function spawnMouseParticle(clientX, clientY) {
   }, 10);
 }
 
-//  Move gradient spheres subtly
-function moveSpheres(clientX, clientY) {
-  const moveX = (clientX / window.innerWidth - 0.5) * 5;
-  const moveY = (clientY / window.innerHeight - 0.5) * 5;
-
-  const spheres = document.querySelectorAll('.gradient-sphere');
-  spheres.forEach((sphere) => {
-    sphere.style.transform = `translate(${moveX}px, ${moveY}px)`;
-  });
-}
 
   </script>
   
