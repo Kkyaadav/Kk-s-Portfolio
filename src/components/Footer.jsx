@@ -4,15 +4,15 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer id="contact" className="bg-black border-t border-white/10 max-w-screen-xl mx-auto text-gray-300 py-10 ">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
         {/* Brand/Name */}
         <h1 className="text-lg  text-white tracking-wider">
           © {new Date().getFullYear()} Kailash Kumar
         </h1>
 
-       <a href="mailto:kkyaadav786@gmail.com" className="border border-gray-400 p-5 rounded-full flex gap-2 
+       <a href="mailto:kkyaadav786@gmail.com" className=" w-full md:w-auto p-5 rounded-full flex gap-2 
 bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 bg-[length:200%_200%] bg-left 
-transition-all duration-700 ease-in-out hover:bg-right text-white"
+transition-all duration-700 ease-in-out hover:bg-right text-white justify-center items-center text-lg font-semibold hover:scale-105 active:scale-95"
 ><Mail/>Get In Touch</a>
 
         {/* Social Icons */}
