@@ -1,0 +1,91 @@
+/* Horizontal lines */
+.row-line {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.row-line::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -20%;
+  height: 2px;
+  width: 20%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff00ff,
+    #00ffff,
+    #00ff00,
+    #ffff00,
+    transparent
+  );
+  background-size: 400% 100%;
+  animation: move-horizontal 3s linear infinite, rainbow-shift 4s linear infinite;
+  opacity: 0;
+}
+.group:hover .row-line::before {
+  opacity: 1;
+}
+
+/* Vertical lines */
+.col-line {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.col-line::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -1px;
+  width: 2px;
+  height: 20%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    #ff00ff,
+    #00ffff,
+    #00ff00,
+    #ffff00,
+    transparent
+  );
+  background-size: 100% 400%;
+  animation: move-vertical 3s linear infinite, rainbow-shift 4s linear infinite;
+  opacity: 0;
+}
+.group:hover .col-line::before {
+  opacity: 1;
+}
+
+/* Movement animations */
+@keyframes move-horizontal {
+  0% { left: -20%; }
+  100% { left: 120%; }
+}
+
+@keyframes move-vertical {
+  0% { top: -20%; }
+  100% { top: 120%; }
+}
+
+/* Color cycling animation */
+@keyframes rainbow-shift {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Delay for organic movement */
+.row-line:nth-child(1)::before { animation-delay: 0s, 0s; }
+.row-line:nth-child(2)::before { animation-delay: 0.3s, 0.3s; }
+.row-line:nth-child(3)::before { animation-delay: 0.6s, 0.6s; }
+.row-line:nth-child(4)::before { animation-delay: 0.9s, 0.9s; }
+.row-line:nth-child(5)::before { animation-delay: 1.2s, 1.2s; }
+.row-line:nth-child(6)::before { animation-delay: 1.5s, 1.5s; }
+.row-line:nth-child(7)::before { animation-delay: 1.8s, 1.8s; }
+.row-line:nth-child(8)::before { animation-delay: 2.1s, 2.1s; }
+
+.col-line:nth-child(9)::before  { animation-delay: 0s, 0s; }
+.col-line:nth-child(10)::before { animation-delay: 0.3s, 0.3s; }
+.col-line:nth-child(11)::before { animation-delay: 0.6s, 0.6s; }
+.col-line:nth-child(12)::before { animation-delay: 0.9s, 0.9s; }
+.col-line:nth-child(13)::before { animation-delay: 1.2s, 1.2s; }
+.col-line:nth-child(14)::before { animation-delay: 1.5s, 1.5s; }
+.col-line:nth-child(15)::before { animation-delay: 1.8s, 1.8s; }
+.col-line:nth-child(16)::before { animation-delay: 2.1s, 2.1s; }

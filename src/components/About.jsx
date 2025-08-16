@@ -60,19 +60,7 @@ function About() {
             I strive to build clean, scalable applications that deliver fast performance,
             accessible design, and joyful user experiences.
           </p>
-         <div className="mt-4">
-         <h3 className="text-xl font-semibold text-purple-400 mb-4">Work Experience</h3>
-         <div>
-            
-            <h4 className="text-red-500"><b>Target India</b></h4>
-           <span className="text-white/70">SDE Intern - (Jul'25 - Present)</span>
-           </div>
-           <div>
-            <h4 className="text-blue-500"><b>Samsung Research Institute</b></h4>
-           <span className="text-white/70">Backend Developer Intern - (Oct'24 - Jul'25)</span>
-           </div>
-
-         </div>
+        
         </motion.div>
 
         {/* Skills Cards */}

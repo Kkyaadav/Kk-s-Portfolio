@@ -4,6 +4,7 @@ import About from "./components/About";
 import Skill from "./components/SkillsAndExpertise";
 import Achievements from "./components/Achievements";
 import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 function App() {
   return (
     <div className="bg-[#0F0F0F] text-white font-sans">
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Skill/>
+      <Experience/>
       <Achievements />
       <Footer/>
 

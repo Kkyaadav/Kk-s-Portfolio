@@ -49,7 +49,7 @@ const stats = [
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="py-16 max-w-7xl px-4 mx-auto md:px-12 lg:px-24 bg-black text-white text-center">
+     <section id="achievements" className="py-16 max-w-7xl px-4 mx-auto md:px-12 lg:px-24 bg-black text-white text-center">
       {/* Tag */}      
       <motion.div
           initial={{ opacity: 0, y: -40 }}

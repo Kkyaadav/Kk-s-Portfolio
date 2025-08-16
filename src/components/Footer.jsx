@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Kailash Kumar
         </h1>
 
-       <a href="mailto:kkyaadav786@gmail.com" className=" w-full md:w-auto p-5 rounded-full flex gap-2 
+       <a href="mailto:kkyaadav786@gmail.com" className=" w-full md:w-auto px-5 py-2 rounded-full flex gap-2 
 bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 bg-[length:200%_200%] bg-left 
 transition-all duration-700 ease-in-out hover:bg-right text-white justify-center items-center text-lg font-semibold hover:scale-105 active:scale-95"
 ><Mail/>Get In Touch</a>
@@ -34,12 +34,12 @@ transition-all duration-700 ease-in-out hover:bg-right text-white justify-center
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/yourusername"
+            href="https://instagram.com/ITS_ME_KK_YADAV"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
           >
-            <FaTwitter />
+            <FaInstagram />
           </a>
         </div>
       </div>
