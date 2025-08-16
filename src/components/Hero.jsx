@@ -31,7 +31,7 @@ function Hero() {
         {/* Name and Title */}
         <motion.h1
           variants={fadeUp}
-          className="text-4xl sm:text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-gradient-x tracking-tight"
+          className="p-2 text-7xl font-saccra font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 animate-gradient-x tracking-tight"
         >
           Kailash Kumar
         </motion.h1>
